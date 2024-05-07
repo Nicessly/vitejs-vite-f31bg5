@@ -1,0 +1,118 @@
+
+
+:root{
+    --border-radius: 2rem;
+    --card-border-radius: 1rem;
+    --btn-padding: 0.6rem 2rem;
+    --search-padding: 0.6rem 1rem;
+    --card-padding: 1rem;
+    --color-light:hsl(252, 30%, 90%);
+    --color-dark: hsl(0, 0%, 0%);
+    --color-primary: hsl(39, 90%, 51%);
+    --sticky-top-left: 5.4rem;
+    --sticky-top-right: -18rem;
+    }
+    
+    
+    *,*::before,*::after{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+        border: 0;
+    }
+
+    
+    .profile-pic {
+        width: 2.7rem; /* Tamaño del contenedor */
+        height: 2.7rem; /* Tamaño del contenedor */
+        border-radius: 50%; /* Hacer el contenedor redondo */
+        overflow: hidden; /* Ocultar cualquier parte de la imagen que se desborde */
+        cursor: pointer;
+    }
+    
+    .profile-pic img {
+        display: block;
+        width: 100%; /* Hacer que la imagen ocupe todo el contenedor */
+        height: 100%; /* Hacer que la imagen ocupe todo el contenedor */
+        object-fit: cover; /* Ajustar la imagen para que cubra el contenedor sin distorsión */
+    }
+    
+    
+    .btn{
+        display: inline-block;
+        padding: var(--btn-padding);
+        font-weight: 500;
+        border-radius: var(--border-radius);
+        cursor: pointer;
+        transition: all 300ms ease;
+    }
+    
+    .btn:hover{
+        opacity: 0.8;
+    }
+    
+    .btn-primary{
+        background: var(--color-primary);
+        color: white;
+    }
+    
+    .text-bold{
+        font-weight: 500;
+    }
+    
+    nav{
+        width: 100%;
+        padding: 0.7rem 0;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        background-color: rgb(12, 12, 12);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        
+    
+    }
+    
+    nav .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    nav .create{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .logo{
+        color: var(--color-primary);
+    }
+    
+    
+    
+    /* Media queries for responsive website */
+    /* for laptop and big tablets */
+    @media screen and (max-width:1200px) {
+        .container{
+            width: 96%;
+        }
+        main .container{
+            grid-template-columns: 5rem auto 30vw;
+            gap: 1rem;
+        }
+    }
+    
+    
+    /*  For small tablets and mobile phones */
+    @media screen and (max-width: 992px){
+        nav .search-bar{
+            display: none;
+        }
+        main .container{
+            grid-template-columns: 0 auto 5rem;
+            gap: 0;
+        }
+    }

@@ -1,42 +1,36 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    
+    body{
+        font-family: "Montserrat", sans-serif;
+        color: var(--color-light);
+        background: var(--color-dark);
+        overflow-x: hidden;
+    }
+    
+    .container{
+        width: 80%;
+        margin: 0 auto;
+    }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+    .app-grid {
+        display: grid;
+        grid-template-rows: auto 1fr; /* El nav estará arriba, el contenido restante ocupará el espacio restante */
+        grid-template-columns: 1fr 1fr 1fr; /* El navbar estará a la izquierda, el contenido restante ocupará el espacio restante y el NavBart estará a la derecha */
+        height: 100vh; /* Ajusta la altura de la grid al 100% del viewport */
+      }
+      
+      .app-grid-sidebar {
+        grid-row: span 2; /* El navbar ocupará dos filas */
+      }
+      
+      .app-grid-navbart {
+        grid-column: 3; /* NavBart estará en la tercera columna */
+        grid-row: span 2; /* NavBart ocupará dos filas */
+      }
+      
+      .app-grid-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      

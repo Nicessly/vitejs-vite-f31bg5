@@ -1,0 +1,50 @@
+
+
+.create-post {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    background: #ffffff; /* Color de fondo blanco */
+    padding: 0.4rem 1rem; /* Ajusta el padding según sea necesario */
+    border-radius: 1rem; /* Radio de borde 1rem */
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.create-post .profile-pic img {
+    width: 40px; /* Ajusta el tamaño de la imagen del perfil según sea necesario */
+    height: 40px; /* Ajusta el tamaño de la imagen del perfil según sea necesario */
+    border-radius: 50%; /* Para hacer la imagen del perfil redonda */
+    margin-right: 1rem; /* Ajusta el margen derecho según sea necesario */
+}
+
+.create-post .image-upload-label {
+    margin-right: 1rem; /* Ajusta el margen derecho según sea necesario */
+}
+
+.create-post .image-icon {
+    font-size: 1.5rem; /* Ajusta el tamaño del icono de imagen según sea necesario */
+}
+
+.create-post .image-upload-input {
+    display: none; /* Oculta el input de imagen */
+}
+
+.create-post input[type="text"] {
+    flex: 1; /* Ocupa el espacio restante en el contenedor */
+    padding-left: 1rem;
+    background: transparent;
+    color: #000000; /* Color de texto negro */
+    border: none; /* Sin borde */
+    outline: none; /* Sin contorno al enfocar */
+}
+
+.create-post input[type="submit"] {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #ffffff; /* Color de texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 0.3rem; /* Radio de borde del botón */
+    padding: 0.5rem 1rem; /* Ajusta el padding según sea necesario */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
